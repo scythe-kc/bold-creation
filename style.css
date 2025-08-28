@@ -1588,3 +1588,36 @@ a.btn-link.text-light:after {
   background-size: cover;
   transition: transform .3s ease-out;
 }
+
+/* Navbar mobile tweaks */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px 16px;
+  }
+  .navbar .navbar-brand .logo-img {
+    height: 32px;
+  }
+  .navbar .navbar-brand .brand-text {
+    font-size: 16px;
+  }
+  .navbar .navbar-toggler {
+    padding: 0.25rem 0.6rem;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 0.5rem;
+  }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    width: 1.25em;
+    height: 1.25em;
+  }
+}
+
+/* Service icons sizing */
+.service-flow .icon-wrap i {
+  font-size: 32px;
+  line-height: 1;
+}
+@media (max-width: 576px) {
+  .service-flow .icon-wrap i {
+    font-size: 28px;
+  }
+}
