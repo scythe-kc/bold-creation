@@ -26,6 +26,17 @@ body::before {
   }
 }
 
+.logo-grid {
+  height: 60px;      /* base size */
+  width: auto;
+  object-fit: contain;
+}
+
+.small-logo {
+  height: 100px;      /* boost smaller logos */
+}
+
+
 /* Mobile screens */
 @media (max-width: 480px) {
   body::before {
@@ -33,7 +44,11 @@ body::before {
   }
 }
 
-
+.img-fluid{
+  align-items: flex-end;  /* increase size (try 500–600px) */
+  width: 100%;        /* responsive scaling */
+  height: auto; 
+}
 body {
   --heading-font: "Marcellus", Roboto, sans-serif;
   --heading-font-weight: 400;
