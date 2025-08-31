@@ -152,51 +152,6 @@
     </defs>
   </svg>
 
-  <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
-
-  <div class="search-popup">
-    <div class="search-popup-container">
-
-      <form role="search" method="get" class="form-group" action="">
-        <input type="search" id="search-form" class="form-control border-0 border-bottom"
-          placeholder="Type and press enter" value="" name="s" />
-        <button type="submit" class="search-submit border-0 position-absolute bg-white"
-          style="top: 15px;right: 15px;"><svg class="search" width="24" height="24">
-            <use xlink:href="#search"></use>
-          </svg></button>
-      </form>
-
-      <h5 class="cat-list-title">Browse Categories</h5>
-
-      <ul class="cat-list">
-        <li class="cat-list-item">
-          <a href="#" title="Jackets">Jackets</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="T-shirts">T-shirts</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Handbags">Handbags</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Accessories">Accessories</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Cosmetics">Cosmetics</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Dresses">Dresses</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Jumpsuits">Jumpsuits</a>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-
-  
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light text-uppercase fs-6 p-3 border-bottom align-items-center">
     <div class="container-fluid">
       <div class="row justify-content-between align-items-center w-100">
@@ -307,26 +262,97 @@
     </div>
   </nav>
 
+<!-- NAV BAR FINISH -->
 
-<!-- about us section -->
-<section class="logo-bar py-20 my-20">
+<section class="services py-5 bg-light">
+  <div class="container">
+    
+    <!-- Section Heading -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold display-5 text-uppercase mb-3">How We Do It</h2>
+      <p class="fs-5 fw-semibold text-dark px-lg-5">
+        Our strength lies in the harmony of <span class="fw-semibold text-dark">craftsmanship</span> and <span class="fw-semibold text-dark">technology</span>.
+        
+        This synergy allows us to deliver not only <span class="text-primary">world-class garments</span> but also 
+        <span class="text-success">climate-conscious collections</span> that meet the expectations of modern buyers.
+      </p>
+    </div>
 
-</section>
-<!--  -->
-
-  <!-- <section class="logo-bar py-5 my-5">
-    <div class="container">
-      <div class="row">
-        <div class="logo-content d-flex flex-wrap justify-content-between">
-          <img src="images/logo1.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo2.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo3.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo4.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo5.png" alt="logo" class="logo-image img-fluid">
+    <!-- Services Grid -->
+    <div class="row g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-lg p-4 rounded-4 text-center">
+          <div class="icon-circle bg-primary text-white mx-auto mb-3">
+            <i class="bi bi-gear-wide-connected fs-2"></i>
+          </div>
+          <h5 class="fw-bold fs-4 mb-3">State-of-the-Art Infrastructure</h5>
+          <p class="text-muted">
+            Advanced machinery and cutting-edge facilities designed for precision and world-class quality.
+          </p>
+          <img src="images/service1.png" alt="Infrastructure" class="card-img-custom shadow-sm">
         </div>
       </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-lg p-4 rounded-4 text-center">
+          <div class="icon-circle bg-success text-white mx-auto mb-3">
+            <i class="bi bi-people-fill fs-2"></i>
+          </div>
+          <h5 class="fw-bold fs-4 mb-3">Expert Teams</h5>
+          <p class="text-muted">
+            A team of skilled professionals with years of experience in global apparel manufacturing.
+          </p>
+          <img src="images/service2.jpg" alt="Expert Teams" class="card-img-custom shadow-sm">
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-lg p-4 rounded-4 text-center">
+          <div class="icon-circle bg-warning text-white mx-auto mb-3">
+            <i class="bi bi-leaf fs-2"></i>
+          </div>
+          <h5 class="fw-bold fs-4 mb-3">Sustainable Practices</h5>
+          <p class="text-muted">
+            Eco-conscious practices embedded at every stage — from fabric sourcing to production & packaging.
+          </p>
+          <img src="images/service3.jpg" alt="Sustainable Practices" class="card-img-custom shadow-sm">
+        </div>
+      </div>
+
     </div>
-  </section> -->
+
+    
+    
+
+  </div>
+</section>
+
+<!-- Custom Styling -->
+<style>
+  .icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  .card-img-custom {
+    width: 100%;
+    height: 200px; /* Same height for all images */
+    object-fit: cover; /* Crops nicely */
+    border-radius: 12px;
+    margin-top: 1rem;
+    display: block;
+  }
+</style>
+
 
   <section class="newsletter bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
     <div class="container">
