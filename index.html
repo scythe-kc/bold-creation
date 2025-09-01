@@ -215,25 +215,28 @@
       
       <!-- Left Content -->
       <div class="col-md-6 text-white p-5 bg-dark">
-        <div class="d-flex align-items-center gap-3">
-            <!-- Logo -->
-            <img src="images/logo_white.png" 
-                alt="Bold Creations Logo" 
-                class="img-fluid" 
-                style="max-width: 90px; height:auto;">
+        <div class="d-flex align-items-center gap-3 flex-wrap">
+          <!-- Logo -->
+          <img src="images/logo_white.png" 
+               alt="Bold Creations Logo" 
+               class="img-fluid"
+               style="max-width: 70px; height:auto;">
 
-            <!-- Text Block -->
-            <div class="d-flex flex-column">
-                <h1 class="fw-bold display-3 text-uppercase mb-0">BOLD CREATIONS</h1>
-                <p class="fs-4 fst-italic text-info mb-0">We make clothes that suit you</p>
-            </div>
-            </div>
+          <!-- Text Block -->
+          <div class="d-flex flex-column">
+            <h1 class="fw-bold text-uppercase mb-0 brand-title">
+              BOLD CREATIONS
+            </h1>
+            <p class="brand-tagline mb-0">
+              We make clothes that suit you
+            </p>
+          </div>
+        </div>
       
-        <p class="lead my-4">
+        <p class="lead my-4 who-text">
           At Bold Creations, we are more than just manufacturers—we are storytellers of fabric, form, and function. Based in Noida, India, we craft garments for high-end boutiques and global fashion brands that value artistry, precision, and ethics.
-<br>
-Our foundation rests on a simple belief: luxury should never come at the cost of the planet. Every piece we produce is a marriage of design, quality, and responsibility—tailored to reflect the individuality of the brands we partner with.
-
+          <br><br>
+          Our foundation rests on a simple belief: luxury should never come at the cost of the planet. Every piece we produce is a marriage of design, quality, and responsibility—tailored to reflect the individuality of the brands we partner with.
         </p>
         <a href="#services" class="btn btn-lg btn-light px-4 py-2">OUR SERVICES</a>
       </div>
@@ -247,7 +250,26 @@ Our foundation rests on a simple belief: luxury should never come at the cost of
   </div>
 </section>
 
+
 <style>
+    .brand-title {
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    line-height: 1.2;
+  }
+
+  /* Tagline scales between 14px and 22px */
+  .brand-tagline {
+    font-size: clamp(0.9rem, 2vw, 1.4rem);
+    font-style: italic;
+    color: #0dcaf0; /* Bootstrap info color */
+  }
+
+  /* Paragraph scales smoothly */
+  .who-text {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.6;
+  }
+
     .who-bg {
   background: url("images/who-we-are.jpg") center/cover no-repeat;
   z-index: 1;
@@ -310,6 +332,7 @@ Our foundation rests on a simple belief: luxury should never come at the cost of
     </div>
   </div>
 </section>
+
 
 <!-- Scroll section -->
 <section class="shipping-countries py-5 bg-light">
