@@ -26,7 +26,7 @@
 </head>
 
 <body class="homepage">
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <defs>
       <symbol xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 15 15">
         <path fill="none" stroke="currentColor"
@@ -180,7 +180,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link" href="who-we-are.html">WHO WE ARE</a>
+                  <a class="nav-link" href="index.html">WHO WE ARE</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="what-we-do.html">WHAT WE DO</a>
@@ -208,13 +208,81 @@
     </div>
   </nav>
 
+
+  <section class="who-we-are py-5">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      
+      <!-- Left Content -->
+      <div class="col-md-6 text-white p-5 bg-dark">
+        <div class="d-flex align-items-center gap-3">
+            <!-- Logo -->
+            <img src="images/logo_white.png" 
+                alt="Bold Creations Logo" 
+                class="img-fluid" 
+                style="max-width: 90px; height:auto;">
+
+            <!-- Text Block -->
+            <div class="d-flex flex-column">
+                <h1 class="fw-bold display-3 text-uppercase mb-0">BOLD CREATIONS</h1>
+                <p class="fs-4 fst-italic text-info mb-0">We make clothes that suit you</p>
+            </div>
+            </div>
+      
+        <p class="lead my-4">
+          At Bold Creations, we are more than just manufacturers—we are storytellers of fabric, form, and function. Based in Noida, India, we craft garments for high-end boutiques and global fashion brands that value artistry, precision, and ethics.
+<br>
+Our foundation rests on a simple belief: luxury should never come at the cost of the planet. Every piece we produce is a marriage of design, quality, and responsibility—tailored to reflect the individuality of the brands we partner with.
+
+        </p>
+        <a href="#services" class="btn btn-lg btn-light px-4 py-2">OUR SERVICES</a>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-md-6 p-0">
+        <img src="images/who-we-are.jpg" class="img-fluid w-100" alt="Fashion Designing">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+    .who-bg {
+  background: url("images/who-we-are.jpg") center/cover no-repeat;
+  z-index: 1;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6); /* dark overlay for readability */
+  z-index: 2;
+}
+
+.who-we-are .container {
+  z-index: 3;
+  position: relative;
+}
+
+.who-we-are h1 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.who-we-are p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+</style>
+
+
   <section class="factories py-5 ">
   <div class="container">
     <div class="row align-items-center">
       
       <!-- Left side: Text and Certifications -->
       <div class="col-md-5 mb-4 mb-md-0">
-        <h3 class="fw-bold">65+ Factories <br> across India onboarded</h3>
+        <h2 class="fw-bold">65+ Factories <br> across India onboarded</h2>
         <p class="text-secondary">Our wide network of factories across India ensures efficient production, ethical practices, and certified quality standards.</p>
         
         <!-- Logos -->
@@ -229,11 +297,11 @@
 
       </div>
 
-    
+      
       <!-- Right side: Map -->
       <div class="col-md-7">
         <div class="map-container position-relative">
-          <img src="images/india-outline.png" alt="India Map" class="img-fluid">
+          <img src="images/india-outline.png" alt="India Map" class="img-fluid" height="20">
 
           <!-- Example factory locations with markers -->
         </div>
@@ -243,548 +311,57 @@
   </div>
 </section>
 
+<!-- Scroll section -->
+<section class="shipping-countries py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">Where We Are Shipping</h2>
+    <p class="text-secondary text-center mb-5">Our global reach ensures timely delivery across continents.</p>
 
-  <section id="billboard" class="bg-light py-5">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <h1 class="section-title text-center mt-4" data-aos="fade-up">
-          BOLD CREATIONS
-        </h1>
-      </div>
-      <div class="col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="300">
-        <p class="text-center">
-          BOLD CREATIONS was established in 2019 as a Buying agency, sourcing merchandise from the
-          Indian Subcontinent with 4+ years of hands-on experience in servicing apparel retailers and
-          importers in the USA, Europe, South America, and Australia. We provide a one stop solution
-          for all your clothing and product sourcing needs, giving you a 360° service from design to
-          delivery across the complete supply chain.
-        </p>
-      </div>
-</div>
+    <!-- Multi-flag Carousel -->
+    <div id="flagsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+      <div class="carousel-inner">
 
-      <!-- <div class="row">
-        <div class="swiper main-swiper py-4" data-aos="fade-up" data-aos-delay="600">
-          <div class="swiper-wrapper d-flex border-animation-left">
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/banner-image-6.jpg" alt="product" class="img-fluid">
-                  </a>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="index.html" class="item-anchor">Soft leather jackets</a>
-                  </h5>
-                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
-                  <div class="btn-left">
-                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
-                  </div>
-                </div>
-              </div>
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            <div class="text-center">
+              <img src="images/australia.png" alt="Australia" class="img-fluid rounded shadow" style="height: 100px; width: 200px;">
+              <p class="mt-2 fw-semibold">Australia</p>
             </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/banner-image-1.jpg" alt="product" class="img-fluid">
-                  </a>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="index.html" class="item-anchor">Soft leather jackets</a>
-                  </h5>
-                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
-                  <div class="btn-left">
-                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
-                  </div>
-                </div>
-              </div>
+            <div class="text-center">
+              <img src="images/Netherlands.png" alt="Netherlands" class="img-fluid rounded shadow" style="height: 100px; width: 200px;">
+              <p class="mt-2 fw-semibold">Netherlands</p>
             </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/banner-image-2.jpg" alt="product" class="img-fluid">
-                  </a>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="index.html" class="item-anchor">Soft leather jackets</a>
-                  </h5>
-                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
-                  <div class="btn-left">
-                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/banner-image-3.jpg" alt="product" class="img-fluid">
-                  </a>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="index.html" class="item-anchor">Soft leather jackets</a>
-                  </h5>
-                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
-                  <div class="btn-left">
-                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/banner-image-4.jpg" alt="product" class="img-fluid">
-                  </a>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="index.html" class="item-anchor">Out crop sweater</a>
-                  </h5>
-                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
-                  <div class="btn-left">
-                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/banner-image-5.jpg" alt="product" class="img-fluid">
-                  </a>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="index.html" class="item-anchor">Soft leather jackets</a>
-                  </h5>
-                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
-                  <div class="btn-left">
-                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
-            <use xlink:href="#arrow-left"></use>
-          </svg></div>
-        <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
-            <use xlink:href="#arrow-right"></use>
-          </svg></div>
-      </div>
-    </div> -->
-  </section>
-
-  <section class="categories overflow-hidden">
-    <div class="container">
-      <div class="open-up" data-aos="zoom-out">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="cat-item image-zoom-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/cat-item1.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-              </div>
-              <div class="category-content">
-                <div class="product-button">
-                  <a href="index.html" class="btn btn-common text-uppercase">Shop for men</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="cat-item image-zoom-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/cat-item2.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-              </div>
-              <div class="category-content">
-                <div class="product-button">
-                  <a href="index.html" class="btn btn-common text-uppercase">Shop for women</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="cat-item image-zoom-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/cat-item3.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-              </div>
-              <div class="category-content">
-                <div class="product-button">
-                  <a href="index.html" class="btn btn-common text-uppercase">Shop accessories</a>
-                </div>
-              </div>
+            <div class="text-center">
+              <img src="images/spain.png" alt="Spain" class="img-fluid rounded shadow" style="height: 100px; width: 200px;">
+              <p class="mt-2 fw-semibold">Spain</p>
             </div>
           </div>
         </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            <div class="text-center">
+              <img src="images/uk.png" alt="United Kingdom" class="img-fluid rounded shadow" style="height: 100px; width: 200px;">
+              <p class="mt-2 fw-semibold">United Kingdom</p>
+            </div>
+            <div class="text-center">
+              <img src="images/malaysia.png" alt="Malaysia" class="img-fluid rounded shadow" style="height: 100px; width: 200px;">
+              <p class="mt-2 fw-semibold">Malaysia</p>
+            </div>
+            <!-- Duplicate 1–2 flags to keep balance -->
+            <div class="text-center">
+              <img src="images/australia.png" alt="Australia" class="img-fluid rounded shadow" style="height: 100px; width: 200px;">
+              <p class="mt-2 fw-semibold">Australia</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </section>
-
-    <section class="features py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="0">
-          <div class="py-5">
-            <svg width="38" height="38" viewBox="0 0 24 24">
-              <use xlink:href="#calendar"></use>
-            </svg>
-            <h4 class="element-title text-capitalize my-3">Book An Appointment</h4>
-            <p>At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
-          </div>
-        </div>
-        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="300">
-          <div class="py-5">
-            <svg width="38" height="38" viewBox="0 0 24 24">
-              <use xlink:href="#shopping-bag"></use>
-            </svg>
-            <h4 class="element-title text-capitalize my-3">Pick up in store</h4>
-            <p>At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
-          </div>
-        </div>
-        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="600">
-          <div class="py-5">
-            <svg width="38" height="38" viewBox="0 0 24 24">
-              <use xlink:href="#gift"></use>
-            </svg>
-            <h4 class="element-title text-capitalize my-3">Special packaging</h4>
-            <p>At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
-          </div>
-        </div>
-        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="900">
-          <div class="py-5">
-            <svg width="38" height="38" viewBox="0 0 24 24">
-              <use xlink:href="#arrow-cycle"></use>
-            </svg>
-            <h4 class="element-title text-capitalize my-3">free global returns</h4>
-            <p>At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="new-arrival" class="new-arrival product-carousel py-5 position-relative overflow-hidden">
-    <div class="container">
-      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-        <h4 class="text-uppercase">Our New Arrivals</h4>
-        <a href="index.html" class="btn-link">View All Products</a>
-      </div>
-      <div class="swiper product-swiper open-up" data-aos="zoom-out">
-        <div class="swiper-wrapper d-flex">
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="index.html">
-                  <img src="images/product-item-1.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="element-title text-uppercase fs-5 mt-3">
-                    <a href="index.html">Dark florish onepiece</a>
-                  </h5>
-                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="index.html">
-                  <img src="images/product-item-2.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Baggy Shirt</a>
-                  </h5>
-                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$55.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="index.html">
-                  <img src="images/product-item-3.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Cotton off-white shirt</a>
-                  </h5>
-                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$65.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="index.html">
-                  <img src="images/product-item-4.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Crop sweater</a>
-                  </h5>
-                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$50.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="index.html">
-                  <img src="images/product-item-10.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Crop sweater</a>
-                  </h5>
-                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$70.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
-          <use xlink:href="#arrow-left"></use>
-        </svg></div>
-      <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
-          <use xlink:href="#arrow-right"></use>
-        </svg></div>
-    </div>
-  </section>
-
-  <section class="collection bg-light position-relative py-5">
-    <div class="container">
-      <div class="row">
-        <div class="title-xlarge text-uppercase txt-fx domino">Collection</div>
-        <div class="collection-item d-flex flex-wrap my-5">
-          <div class="col-md-6 column-container">
-            <div class="image-holder">
-              <img src="images/single-image-2.jpg" alt="collection" class="product-image img-fluid">
-            </div>
-          </div>
-          <div class="col-md-6 column-container bg-white">
-            <div class="collection-content p-5 m-0 m-md-5">
-              <h3 class="element-title text-uppercase">Classic winter collection</h3>
-              <p>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla a. Ac sed eu
-                fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit libero. Ultricies quam
-                nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor id in. Pulvinar commodo mollis
-                diam sed facilisis at cursus imperdiet cursus ac faucibus sit faucibus sit libero.</p>
-              <a href="#" class="btn btn-dark text-uppercase mt-3">Shop Collection</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="best-sellers" class="best-sellers product-carousel py-5 position-relative overflow-hidden">
-    <div class="container">
-      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-        <h4 class="text-uppercase">Best Selling Items</h4>
-        <a href="index.html" class="btn-link">View All Products</a>
-      </div>
-      <div class="swiper product-swiper open-up" data-aos="zoom-out">
-        <div class="swiper-wrapper d-flex">
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/product-item-4.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Dark florish onepiece</a>
-                  </h5>
-                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/product-item-3.jpg" alt="product" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Baggy Shirt</a>
-                  </h5>
-                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$55.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/product-item-5.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Cotton off-white shirt</a>
-                  </h5>
-                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$65.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/product-item-6.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Handmade crop sweater</a>
-                  </h5>
-                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$50.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/product-item-9.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Dark florish onepiece</a>
-                  </h5>
-                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$70.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/product-item-10.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Cotton off-white shirt</a>
-                  </h5>
-                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$70.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
-          <use xlink:href="#arrow-left"></use>
-        </svg></div>
-      <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
-          <use xlink:href="#arrow-right"></use>
-        </svg></div>
-    </div>
-  </section>
-
-  <section class="video py-5 overflow-hidden">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="video-content open-up" data-aos="zoom-out">
-          <div class="video-bg">
-            <img src="images/video-image.jpg" alt="video" class="video-image img-fluid">
-          </div>
-          <div class="video-player">
-            <a class="youtube" href="https://www.youtube.com/embed/pjtsGzQjFM4">
-              <svg width="24" height="24" viewBox="0 0 24 24">
-                <use xlink:href="#play"></use>
-              </svg>
-              <img src="images/text-pattern.png" alt="pattern" class="text-rotate">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
   <section class="testimonials py-5 bg-light">
     <div class="section-header text-center mt-5">
@@ -829,233 +406,7 @@
     <div class="testimonial-swiper-pagination d-flex justify-content-center mb-5"></div>
   </section>
 
-  <section id="related-products" class="related-products product-carousel py-5 position-relative overflow-hidden">
-    <div class="container">
-      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-        <h4 class="text-uppercase">You May Also Like</h4>
-        <a href="index.html" class="btn-link">View All Products</a>
-      </div>
-      <div class="swiper product-swiper open-up" data-aos="zoom-out">
-        <div class="swiper-wrapper d-flex">
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/product-item-5.jpg" alt="product" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Dark florish onepiece</a>
-                  </h5>
-                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/product-item-6.jpg" alt="product" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Baggy Shirt</a>
-                  </h5>
-                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$55.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/product-item-7.jpg" alt="product" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Cotton off-white shirt</a>
-                  </h5>
-                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$65.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/product-item-8.jpg" alt="product" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Handmade crop sweater</a>
-                  </h5>
-                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$50.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder">
-                <a href="index.html">
-                  <img src="images/product-item-1.jpg" alt="product" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Handmade crop sweater</a>
-                  </h5>
-                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$70.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
-          <use xlink:href="#arrow-left"></use>
-        </svg></div>
-      <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
-          <use xlink:href="#arrow-right"></use>
-        </svg></div>
-    </div>
-  </section>
-<!-- logistic section -->
-<section id="services" class="py-5 bg-light">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Our Supply Chain Services</h2>
-      <p class="text-muted">End-to-end solutions for global apparel sourcing</p>
-    </div>
-
-    <div class="d-flex flex-wrap justify-content-center align-items-center service-flow">
-
-      <!-- Item 1 -->
-      <div class="service-step text-center">
-        <div class="icon-wrap">
-          <i class="bi bi-building-gear" aria-hidden="true"></i>
-        </div>
-        <h6 class="mt-3">Factory Discovery</h6>
-      </div>
-      <div class="arrow">
-        <i class="bi bi-arrow-right"></i>
-      </div>
-
-      <!-- Item 2 -->
-      <div class="service-step text-center">
-        <div class="icon-wrap">
-          <i class="bi bi-pencil-square" aria-hidden="true"></i>
-        </div>
-        <h6 class="mt-3">Design & Sampling</h6>
-      </div>
-      <div class="arrow">
-        <i class="bi bi-arrow-right"></i>
-      </div>
-
-      <!-- Item 3 -->
-      <div class="service-step text-center">
-        <div class="icon-wrap">
-          <i class="bi bi-receipt" aria-hidden="true"></i>
-        </div>
-        <h6 class="mt-3">Order Management</h6>
-      </div>
-      <div class="arrow">
-        <i class="bi bi-arrow-right"></i>
-      </div>
-
-      <!-- Item 4 -->
-      <div class="service-step text-center">
-        <div class="icon-wrap">
-          <i class="bi bi-gear-wide-connected" aria-hidden="true"></i>
-        </div>
-        <h6 class="mt-3">Production</h6>
-      </div>
-      <div class="arrow">
-        <i class="bi bi-arrow-right"></i>
-      </div>
-
-      <!-- Item 5 -->
-      <div class="service-step text-center">
-        <div class="icon-wrap">
-          <i class="bi bi-award" aria-hidden="true"></i>
-        </div>
-        <h6 class="mt-3">Quality Assurance</h6>
-      </div>
-      <div class="arrow">
-        <i class="bi bi-arrow-right"></i>
-      </div>
-
-      <!-- Item 6 -->
-      <div class="service-step text-center">
-        <div class="icon-wrap">
-          <i class="bi bi-truck" aria-hidden="true"></i>
-        </div>
-        <h6 class="mt-3">Logistics Management</h6>
-      </div>
-      <div class="arrow">
-        <i class="bi bi-arrow-right"></i>
-      </div>
-
-      <!-- Item 7 -->
-      <div class="service-step text-center">
-        <div class="icon-wrap">
-          <i class="bi bi-box-seam" aria-hidden="true"></i>
-        </div>
-        <h6 class="mt-3">Delivery</h6>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<style>
-.service-flow {
-  gap: 20px;
-}
-.service-step {
-  min-width: 120px;
-}
-.icon-wrap {
-  background: #fff;
-  border-radius: 50%;
-  padding: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  display: inline-block;
-}
-.arrow {
-  font-size: 1.5rem;
-  color: #999;
-  align-self: center;
-}
-</style>
+  
 
 <!-- blog section start -->
   <section id="blog" class="blog py-5">
@@ -1126,35 +477,45 @@
     </div>
   </section>
 
-  <section class="logo-bar py-5 my-5">
-    <div class="container">
-      <div class="row">
-        <div class="logo-content d-flex flex-wrap justify-content-between">
-          <img src="images/logo1.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo2.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo3.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo4.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo5.png" alt="logo" class="logo-image img-fluid">
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="contact-map py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">Our Locations</h2>
 
-  <section class="newsletter bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 py-5 my-5">
-          <div class="subscribe-header text-center pb-3">
-            <h3 class="section-title text-uppercase">Sign Up for our newsletter</h3>
-          </div>
-          <form id="form" class="d-flex flex-wrap gap-2">
-            <input type="text" name="email" placeholder="Your Email Addresss" class="form-control form-control-lg">
-            <button class="btn btn-dark btn-lg text-uppercase w-100">Sign Up</button>
-          </form>
-        </div>
+    <div class="row g-4">
+      <!-- Factory & Office -->
+      <div class="col-md-6">
+        <h5 class="fw-bold">Factory & Office</h5>
+        <p class="text-secondary">
+          E39, EPIP, Site V, Kasna<br>
+          Greater Noida, Uttar Pradesh, INDIA - 201306
+        </p>
+        <iframe
+          src="https://www.google.com/maps?q=28.474489,77.500292&hl=en&z=16&output=embed"
+          width="100%" height="350" style="border:0; border-radius:12px;"
+          allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Office -->
+      <div class="col-md-6">
+        <h5 class="fw-bold">Office</h5>
+        <p class="text-secondary">
+          A 249, 2nd floor, Sector 69<br>
+          Noida, Uttar Pradesh, INDIA - 201301
+        </p>
+        <iframe
+          src="https://www.google.com/maps?q=28.591609,77.369226&hl=en&z=16&output=embed"
+          width="100%" height="350" style="border:0; border-radius:12px;"
+          allowfullscreen="" loading="lazy">
+        </iframe>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+  
 
   <section class="instagram position-relative">
     <div class="d-flex justify-content-center w-100 position-absolute bottom-0 z-1">
@@ -1211,13 +572,6 @@
       <div class="row d-flex flex-wrap justify-content-between py-5">
         <div class="col-md-3 col-sm-6">
           <div class="footer-menu footer-menu-001">
-            <div class="footer-intro mb-4">
-              <!-- <a href="index.html">
-                <img src="images/logo.png" alt="BOLD CREATIONS Logo" class="logo-img me-2">
-              </a> -->
-            </div>
-            <p>Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in. Nisi, purus
-              vitae, ultrices nunc. Sit ac sit suscipit hendrerit.</p>
             <div class="social-links">
               <ul class="list-unstyled d-flex flex-wrap gap-3">
                 <li>
@@ -1263,21 +617,25 @@
           <div class="footer-menu footer-menu-002">
             <h5 class="widget-title text-uppercase mb-4">Quick Links</h5>
             <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+              
               <li class="menu-item">
-                <a href="index.html" class="item-anchor">Home</a>
-              </li>
-              <li class="menu-item">
-                <a href="index.html" class="item-anchor">About</a>
-              </li>
-              <li class="menu-item">
-                <a href="blog.html" class="item-anchor">Services</a>
-              </li>
-              <li class="menu-item">
-                <a href="styles.html" class="item-anchor">Single item</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Contact</a>
-              </li>
+                  <a class="nav-link" href="index.html">WHO WE ARE</a>
+                </li>
+                <li class="menu-item">
+                  <a class="nav-link" href="what-we-do.html">WHAT WE DO</a>
+                </li>
+                <li class="menu-item">
+                  <a class="nav-link" href="How_we_do_it.html">HOW WE DO IT</a>
+                </li>
+                <li class="menu-item">
+                  <a class="nav-link" href="why-we-do-it.html">WHY WE DO IT</a>
+                </li>
+                <li class="menu-item">
+                  <a class="nav-link" href="about-us.html">OUR PROMISE</a>
+                </li>
+                <li class="menu-item">
+                  <a class="nav-link" href="#footer">CONTACT US</a>
+                </li>
             </ul>
           </div>
         </div>
@@ -1309,9 +667,9 @@
         <div class="col-md-3 col-sm-6">
           <div class="footer-menu footer-menu-004 border-animation-left">
             <h5 class="widget-title text-uppercase mb-4">Contact Us</h5>
-            <p>Do you have any questions or suggestions? <a href="mailto:contact@yourcompany.com"
-                class="item-anchor">contact@yourcompany.com</a></p>
-            <p>Do you need support? Give us a call. <a href="tel:+43 720 11 52 78" class="item-anchor">12345678</a>
+            <p>Do you have any questions or suggestions? <a href="mailto:ram@boldcreations.in"
+                class="item-anchor">ram@boldcreations.in</a></p>
+            <p>Do you need support? Give us a call. <a href="tel:+91 9650960399" class="item-anchor">+91 9650960399</a>
             </p>
           </div>
         </div>
